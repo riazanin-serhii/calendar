@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hui</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="first.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/first.js"></script>
 </head>
 
 <body>
@@ -18,17 +18,17 @@
                     <input type="button" value="New event +" class='button'>
                     <div class="select">
                         <select name="name" id="name">
-                            <option name="All" value="All">All members</option>
-                            <option name="Maria" value="Maria">Maria</option>
-                            <option name="Bob" value="Bob">Bob</option>
-                            <option name="Alex" value="Alex">Alex</option>
+                            <option>All members</option>
+                            <option>Maria</option>
+                            <option>Bob</option>
+                            <option>Alex</option>
                         </select>
                     </div>
                 </div>
             </form>
             <div class="calendar"></div>
         </div>
-        <form class="newEvent" action="">
+        <form class="newEvent">
             <div class="error">
                 <span class="circle"></span>
                 <p>Failed to create an event. Time slot is already booked.</p>
@@ -76,14 +76,13 @@
                 <input type="button" value="Create" id="btnCreateEvent">
                 <input type="button" value="Cancel" id="btnCancelEvent">
             </div>
+        </form>
+        <div class="delete">
+            <p></p>
+            <input type="button" value="No" id="deleteNo">
+            <input type="button" value="Yes" id="deleteYes">
+        </div>
     </div>
-    <div class="delete">
-        <p></p>
-        <input type="button" value="No" id="deleteNo">
-        <input type="button" value="Yes" id="deleteYes">
-    </div>
-
-    </form>
 </body>
 
 </html>
